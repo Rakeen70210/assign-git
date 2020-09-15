@@ -1,5 +1,36 @@
 • What is a gitignore file and what should it include for a Java project?
-• What does fast-forward in Git mean?
-• Why should you have different branches?
-• In a project how many remote Git repositories do you usually have?
+    This file lets you choose what kinds of files you want to be untracked by git. For java, it will include the following:
+    # Compiled class file
+    *.class
 
+    # Log file
+    *.log
+
+    # BlueJ files
+    *.ctxt
+
+    # Mobile Tools for Java (J2ME)
+    .mtj.tmp/
+
+    # Package Files #
+    *.jar
+    *.war
+    *.nar
+    *.ear
+    *.zip
+    *.tar.gz
+    *.rar
+
+    # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+    hs_err_pid*
+
+• What does fast-forward in Git mean?
+    Fast-forward occurs when git can simply move the pointer forward without having to handle divergent paths. If I create a new branch based off master, make changes to it, 
+    I can then "fast-forward" by merging my new branch into master. This is assuming we have not touched the master branch, else fast-forward cannot occur.
+• Why should you have different branches?
+    It makes working on different versions of code simpler. Your master branch should be a version of code that is most stable, with newer branches having code that may not be thoroughly
+    tested and therefore lesss table. Branches can be used to implement new features and once you have finished adding/testing changes, you can merge changes into master.
+    Branches also make collaborating with multiple people on a project more streamlined. Two people can branch off master and implement different features, once they are done 
+    they can merge into master and see how both of their changes affect the end product.
+• In a project how many remote Git repositories do you usually have?
+    You can have as many as you want, as long as each repository has a meaningful purpose. Generally there is only 1 remote repo but with multiple branches.
