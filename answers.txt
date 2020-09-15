@@ -1,5 +1,5 @@
 • What is a gitignore file and what should it include for a Java project?
-    This file lets you choose what kinds of files you want to be untracked by git. For java, it will include the following:
+    This file lets you choose what kinds of files you want to be untracked by git. For java, it can include the following, these files will not be tracked by git:
     # Compiled class file
     *.class
     # Log file
