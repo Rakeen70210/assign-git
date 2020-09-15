@@ -2,16 +2,12 @@
     This file lets you choose what kinds of files you want to be untracked by git. For java, it will include the following:
     # Compiled class file
     *.class
-
     # Log file
     *.log
-
     # BlueJ files
     *.ctxt
-
     # Mobile Tools for Java (J2ME)
     .mtj.tmp/
-
     # Package Files #
     *.jar
     *.war
@@ -20,10 +16,8 @@
     *.zip
     *.tar.gz
     *.rar
-
     # virtual machine crash logs
     hs_err_pid*
-
 • What does fast-forward in Git mean?
     Fast-forward occurs when git can simply move the pointer forward without having to handle divergent paths. If I create a new branch based off master, make changes to it, 
     I can then "fast-forward" by merging my new branch into master. This is assuming we have not touched the master branch, else fast-forward cannot occur.
