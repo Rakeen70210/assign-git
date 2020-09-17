@@ -19,7 +19,7 @@
     # virtual machine crash logs
     hs_err_pid*
 • What does fast-forward in Git mean?
-    Fast-forward occurs when git can simply move the pointer forward without having to handle divergent paths. If I create a new branch based off master, make changes to it, 
+    If I create a new branch based off master, make changes to it, 
     I can then "fast-forward" by merging my new branch into master. This is assuming we have not touched the master branch, else fast-forward cannot occur.
 • Why should you have different branches?
     It makes working on different versions of code simpler. Your master branch should be a version of code that is most stable, with newer branches having code that may not be thoroughly
